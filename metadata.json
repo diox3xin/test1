@@ -1,0 +1,6 @@
+{
+  "name": "ST LivePhone — Живой телефон и соцсеть для SillyTavern",
+  "description": "Интерактивная песочница и генератор расширения живого смартфона для SillyTavern: автономные НПС, лента постов, подписчики, личные сообщения и двусторонняя синхронизация с ролевым чатом.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
