@@ -804,6 +804,24 @@ export default function App() {
           </div>
         )}
 
+        {activeNav === 'workspace' && (
+          <div className="mb-4 px-4 py-3 bg-slate-900/90 border border-amber-500/30 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div className="text-slate-200">
+              <strong className="text-amber-400">Исправлено для установки с GitHub:</strong> файлы{' '}
+              <code className="font-mono text-amber-300">manifest.json</code>,{' '}
+              <code className="font-mono text-amber-300">index.js</code> и{' '}
+              <code className="font-mono text-amber-300">style.css</code> теперь лежат прямо в корне этого проекта (и в корне ZIP-архива без вложенной папки).
+            </div>
+            <button
+              type="button"
+              onClick={() => setActiveNav('export')}
+              className="px-3.5 py-1.5 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 font-semibold rounded-lg transition-colors cursor-pointer whitespace-nowrap shrink-0"
+            >
+              Проверить ссылку GitHub и инструкцию →
+            </button>
+          </div>
+        )}
+
         {/* VIEW 1: COUPLED ROLEPLAY CHAT & LIVE SMARTPHONE */}
         {activeNav === 'workspace' && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
